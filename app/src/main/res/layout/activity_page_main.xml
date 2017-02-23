@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.sharda.PageMain"
+    android:background="@drawable/terminatorb">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/sharda"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faculty Credentials"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserID"
+            android:layout_marginTop="180dp"
+            android:textStyle="bold"
+            android:textColor="@color/Gold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/LavenderBlush"
+            android:hint="Input UserName"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="180dp"
+            android:id="@+id/user1"
+            android:textColorHint="@color/Red"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="210dp"
+            android:textStyle="bold"
+            android:textColor="@color/Gold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/LavenderBlush"
+            android:hint="Input Password"
+            android:id="@+id/pass1"
+            android:password="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="210dp"
+            android:textColorHint="@color/Red"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Credentials"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="70dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserID"
+            android:layout_marginTop="320dp"
+            android:textStyle="bold"
+            android:textColor="@color/Gold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/LavenderBlush"
+            android:hint="Input UserName"
+            android:id="@+id/user2"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="320dp"
+            android:textColorHint="@color/Red"
+            android:layout_weight="0.20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="350dp"
+            android:textStyle="bold"
+            android:textColor="@color/Gold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/LavenderBlush"
+            android:id="@+id/pass2"
+            android:hint="Input Password"
+            android:layout_marginLeft="80dp"
+            android:password="true"
+            android:layout_marginTop="350dp"
+            android:textColorHint="@color/Red"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="Faculty Login"
+            android:id="@+id/Fbtn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="Student Login"
+            android:id="@+id/Sbtn"/>
+        <Button
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:textAlignment="center"
+            android:text="About"
+            android:id="@+id/abt"/>
+    </LinearLayout>
+</RelativeLayout>
